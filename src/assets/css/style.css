@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+
+
+:root{
+    /*Cores*/
+
+    --cinza:#18161F;
+    --roxo-preto:#110E1A;
+    --roxo-escuro: #0F091F;
+    --lilais:#4B00E5;
+    --roxo:#501DB9;
+
+    /*Fontes*/
+
+    --fonte-titulo: 'Staatliches','San-Serif';
+    --fonte-paragrafo: 'Quicksand','San-Serif';
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(4, 0, 22);
+    color: white;
+}
+
+header{
+    height: 15vh;
+    
+}
+main{
+    display: flex;
+}

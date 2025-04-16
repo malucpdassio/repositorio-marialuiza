@@ -6,11 +6,11 @@
 :root{
     /*Cores*/
 
-    --cinza:#18161F;
-    --roxo-preto:#110E1A;
-    --roxo-escuro: #0F091F;
-    --lilais:#4B00E5;
-    --roxo:#501DB9;
+    --preto:#0B0B0B;
+    --vinho-escuro: #0F080A;
+    --vinho:#A4062E;
+    --Vinho-escuro:#540318;
+    
 
     /*Fontes*/
 
@@ -25,14 +25,126 @@
 }
 
 body{
-    background-color: rgb(4, 0, 22);
+    background-color: var(--preto);
     color: white;
 }
 
 header{
-    height: 15vh;
-    
+    height: vh;
+    display: flex;
+    gap: 55%;
+    padding: 10px;
+    border-bottom: 2px solid var(--vinho);
 }
+header > h1{
+    font-family: var(--fonte-titulo);
+    font-weight: 200;
+    font-size: 1,25em;
+}
+strong{
+    color: var(--vinho);
+    font-family: var(--fonte-titulo);
+    font-weight: 200;
+}
+#menu{
+    margin-top: 1%;
+}
+#menu > a{
+    
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    font-family: var(--fonte-paragrafo);
+    font-size: 1em;
+}
+#menu > a:hover{
+    color: var(--vinho);
+    text-decoration: underline;
+    transition: 0.2s;
+}
+
+/*Principal*/
 main{
     display: flex;
+    flex-direction: column;
+    
+}
+section{
+  margin: 10%;
+  margin-left: 20%;
+  display: flex;
+  flex-direction: column;
+  columns: 2;
+}
+section > h2{
+    font-size: 3em;
+    font-family: var(--fonte-titulo);
+    font-weight: 200;
+}
+section > h1{
+    font-size: 3.5em;
+    color: var(--vinho);
+    font-family: var(--fonte-titulo);
+    font-weight: 200;
+}
+
+.apresentacao__link{
+    display: flex;
+    gap: 5%;
+    margin: 2% 0 2% 0;
+}
+
+.apresentacao__curriculo{
+    margin: 1%;
+    padding: 10px;
+    border: 2px solid var(--vinho);
+    border-radius: 5px;
+    text-decoration: none;
+    font-family: var(--fonte-paragrafo);
+    font-weight: bold;
+    font-size: 1.25em;
+    color: var(--vinho);
+}
+.apresentacao__curriculo:hover{
+    background-color: var(--vinho);
+    color: var(--preto);
+    transition: 0.35s;
+}
+
+.redes-sociais{
+    margin: 0 -3%;
+    font-family: var(--fonte-paragrafo);
+}
+
+a > img{
+    width: 10%;
+    padding: 5px;
+}
+
+/*SKILL*/
+
+.skill{
+    background-color: var(--vinho-escuro);
+    margin: 0;
+    padding: 30px;
+    border: 2px solid var(--vinho);
+    text-align: center;
+}
+
+.skill__img{
+    width: 50%;
+    margin: auto;
+    display:flex;
+    
+}
+
+.skill__img > img{
+    min-width: 15%;
+    margin-top: 1.5%;
+    padding: 20px;
+     
+}
+
+.skill__img::-webkit-scrollbar { 
+    display: none; 
 }

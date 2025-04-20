@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,7 +26,7 @@
         <section class="apresentacao">
             <h2>Olá, Meu nome é</h2>
             <h1>Maria Luiza Dássio</h1>
-            <h2>E eu sou <strong>Desenvolvedora</strong></h2>
+            <h2>E eu sou <strong>Desenvolvedora</strong>!</h2>
             
             
             <div class="apresentacao__link">
@@ -52,44 +52,44 @@
 
         <article class="skill">
             
-            <h2>SKILL</h2>
+            <h2>SKILLS</h2>
 
-            <div class="skill__img">
-                <img src="src/assets/image/tech-js.png" alt="logo-javascript">
-                <img src="src/assets/image/tech-html.png" alt="logo-html">
-                <img src="src/assets/image/tech-css-3.png" alt="logo-css-3">
-                <img src="src/assets/image/tech-github.png" alt="logo-github">
-                <img src="src/assets/image/tech-git.png" alt="logo-git">
-                <img src="src/assets/image/figma.png" alt="logo-figma">
-            </div>
+    
+        
+            <img src="src/assets/image/tech-js.png" alt="logo-javascript">
+            <img src="src/assets/image/tech-html.png" alt="logo-html">
+            <img src="src/assets/image/tech-css-3.png" alt="logo-css-3">
+            <img src="src/assets/image/tech-github.png" alt="logo-github">
+            <img src="src/assets/image/tech-git.png" alt="logo-git">
+            <img src="src/assets/image/figma.png" alt="logo-figma">
+
+            
 
         </article>
 
         <article class="projetos">
             <h2>PROJETOS</h2>
 
-            <div>
-                <img src="" alt="projeto-01">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum perspiciatis soluta hic iure nesciunt aliquam, praesentium maiores laudantium exercitationem blanditiis labore tempore ab ex molestias assumenda quibusdam debitis quae accusantium?</p>
+            <div class="projetos__apresentacao">
+                <div>
+                    <img src="" alt="projeto-01">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum perspiciatis soluta hic iure nesciunt aliquam, praesentium maiores laudantium exercitationem blanditiis labore tempore ab ex molestias assumenda quibusdam debitis quae accusantium?</p>
+                    <a href="">Codigo GitHub</a>
+                    <a href="">Demo</a>
+                </div>
+                <div>
+                    <img src="" alt="projeto-01">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum perspiciatis soluta hic iure nesciunt aliquam, praesentium maiores laudantium exercitationem blanditiis labore tempore ab ex molestias assumenda quibusdam debitis quae accusantium?</p>
+                    <a href="">Codigo GitHub</a>
+                    <a href="">Demo</a>
+                </div>
+                <div>
+                    <img src="" alt="projeto-01">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum perspiciatis soluta hic iure nesciunt aliquam, praesentium maiores laudantium exercitationem blanditiis labore tempore ab ex molestias assumenda quibusdam debitis quae accusantium?</p>
 
-                <a href="">Codigo GitHub</a>
-                <a href="">Demo</a>
-            </div>
-
-            <div>
-                <img src="" alt="projeto-01">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum perspiciatis soluta hic iure nesciunt aliquam, praesentium maiores laudantium exercitationem blanditiis labore tempore ab ex molestias assumenda quibusdam debitis quae accusantium?</p>
-
-                <a href="">Codigo GitHub</a>
-                <a href="">Demo</a>
-            </div>
-
-            <div>
-                <img src="" alt="projeto-01">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum perspiciatis soluta hic iure nesciunt aliquam, praesentium maiores laudantium exercitationem blanditiis labore tempore ab ex molestias assumenda quibusdam debitis quae accusantium?</p>
-
-                <a href="">Codigo GitHub</a>
-                <a href="">Demo</a>
+                    <a href="">Codigo GitHub</a>
+                    <a href="">Demo</a>
+                </div>
             </div>
             
         </article>
@@ -110,9 +110,10 @@
 
                 <div class="redes-sociais">
                     <p>Redes Sociais</p>
-                    <a href=""><img src="imagem/github-logo.png" alt="icone-github"></a>
-                    <a href=""><img src="imagem/icon-whatsapp.png" alt="icone-whatsapp"></a>
-                    <a href=""><img src="imagem/icon-instagram.png" alt="icone-instagram"></a>
+                    <a href=""><img src="src/assets/icon/icon-github-color.png" alt="icone-github"></a>
+                    <a href=""><img src="src/assets/icon/icon-whatsapp.png" alt="icone-whatsapp"></a>
+                    <a href=""><img src="src/assets/icon/icon-instagram.png" alt="icone-instagram"></a>
+                    <a href=""><img src="src/assets/icon/icon-linkedin.png" alt="icone-linkedin"></a>
                 </div>
 
             </div>
@@ -120,19 +121,24 @@
             <div class="contato__formulario">
                 <h2>FORMULARIO DE CONTATO</h2>
                 <p>Envie seus dados para eu poder entrar em contato com você!</p>
-                <form action="">
+                <form id="formulario__contato">
                     
-                    <label for="">Nome</label>
-                    <input type="text" name="contato__nome" id="contato__nome">
+                    <label for="nome">Nome</label>
+                    <input type="text" name="nome" id="contato__nome" required>
 
-                    <label for="">E-mail</label>
-                    <input type="email" name="contato__email" id="contato__email">
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email" id="contato__email" required>
 
-                    <label for="">Telefone</label>
-                    <input type="tel" name="contato__telefone" id="contato__telefone">
+                    <label for="telefone">Telefone</label>
+                    <input type="tel" name="telefone" id="contato__telefone" required>
 
-                    <label for="">Mensagem</label>
-                    <input type="text" name="contato__mensagem" id="contato__mensagem">
+                    <label for="titulo">Título</label>
+                    <input type="text" name="titulo" id="contato__titulo">
+
+                    <label for="mensagem">Mensagem</label>
+                    <textarea name="mensagem" id="contato__mensagem" required></textarea>
+
+                    <input type="submit" value="Enviar">
                 </form>
             </div>
         </article>
@@ -141,5 +147,12 @@
     <footer>
 
     </footer>
+
+    <!--Biblioteca do EmailJS-->    
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <script src="src/javascript/script-formulario.js"></script>
+    
 </body>
+
 </html>

@@ -73,18 +73,23 @@
             <div class="projetos__apresentacao">
                 <div>
                     <img src="" alt="projeto-01">
+                    <h3>PROJETO 01</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum perspiciatis soluta hic iure nesciunt aliquam, praesentium maiores laudantium exercitationem blanditiis labore tempore ab ex molestias assumenda quibusdam debitis quae accusantium?</p>
                     <a href="">Codigo GitHub</a>
                     <a href="">Demo</a>
                 </div>
+
                 <div>
                     <img src="" alt="projeto-01">
+                    <h3>PROJETO 02</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum perspiciatis soluta hic iure nesciunt aliquam, praesentium maiores laudantium exercitationem blanditiis labore tempore ab ex molestias assumenda quibusdam debitis quae accusantium?</p>
                     <a href="">Codigo GitHub</a>
                     <a href="">Demo</a>
                 </div>
+
                 <div>
                     <img src="" alt="projeto-01">
+                    <h3>PROJETO 03</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum perspiciatis soluta hic iure nesciunt aliquam, praesentium maiores laudantium exercitationem blanditiis labore tempore ab ex molestias assumenda quibusdam debitis quae accusantium?</p>
 
                     <a href="">Codigo GitHub</a>
@@ -100,12 +105,12 @@
 
                 <div class="contato__fornecido__tel">
                     <P>Telefone:</P>
-                    <p>71 9 8704-1221</p>
+                    <h4>71 9 8704-1221</h4>
                 </div>
 
                 <div class="contato__fornecido__email">
-                    <p>E-mail</p>
-                    <p>malucardosopd@gmail.com</p>
+                    <p>E-mail:</p>
+                    <h4>malucardosopd@gmail.com</h4>
                 </div>
 
                 <div class="redes-sociais">
@@ -126,11 +131,17 @@
                     <label for="nome">Nome</label>
                     <input type="text" name="nome" id="contato__nome" required>
 
-                    <label for="email">E-mail</label>
-                    <input type="email" name="email" id="contato__email" required>
-
-                    <label for="telefone">Telefone</label>
-                    <input type="tel" name="telefone" id="contato__telefone" required>
+                    <div class="grupo__linha">
+                        <div>
+                          <label for="email">E-mail</label>
+                          <input type="email" name="email" id="contato__email" required>
+                        </div>
+                      
+                        <div>
+                          <label for="telefone">Telefone</label>
+                          <input type="tel" name="telefone" id="contato__telefone" required>
+                        </div>
+                      </div>
 
                     <label for="titulo">Título</label>
                     <input type="text" name="titulo" id="contato__titulo">
@@ -138,14 +149,14 @@
                     <label for="mensagem">Mensagem</label>
                     <textarea name="mensagem" id="contato__mensagem" required></textarea>
 
-                    <input type="submit" value="Enviar">
+                    <input type="submit" value="Enviar" id="bnt-enviar">
                 </form>
             </div>
         </article>
         
     </main>
     <footer>
-
+        <p>Desenvolvido por Maria Luiza Dassio</p>
     </footer>
 
     <!--Biblioteca do EmailJS-->    

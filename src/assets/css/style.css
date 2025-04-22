@@ -10,6 +10,7 @@
     --vinho-escuro: #0F080A;
     --vinho:#A4062E;
     --Vinho-escuro:#540318;
+    --vinho-claro:#AF2D4E;
     
 
     /*Fontes*/
@@ -35,6 +36,7 @@ header{
     gap: 50%;
     padding: 8px;
     border-bottom: 2px solid var(--vinho);
+    
 }
 header > h1{
     font-family: var(--fonte-titulo);
@@ -113,7 +115,7 @@ section > h1{
     font-family: var(--fonte-paragrafo);
 }
 
-a > img{
+.redes-sociais a > img{
     width: 10%;
     padding: 5px;
 }
@@ -167,7 +169,11 @@ a > img{
 }
 
 .projetos h2{
-    margin-bottom: 10%;
+    margin-bottom: 5%;
+    font-family: var(--fonte-titulo);
+    font-size: 2.5em;
+    color: var(--vinho);
+    letter-spacing: 10px;
 }
 .projetos__apresentacao{
     display: flex;
@@ -180,15 +186,187 @@ a > img{
     text-align: justify;
     font-family: var(--fonte-paragrafo);
 }
-.projetos__apresentacao  div > a{
-    text-align: right;
+.projetos__apresentacao a, p{
+    margin: 1% 0 5% 0;
     
+}
+.projetos__apresentacao a{
+    margin-left: 5%;
+    float: right;
+    text-decoration: none;
+    font-size: 1em;
+    color: var(--vinho-claro);
+}
+.projetos__apresentacao a:hover{
+    text-decoration: underline;
+    color: var(--Vinho-escuro);
+}
+.projetos__apresentacao h3{
+    margin-top: 5%;
+    font-family: var(--fonte-titulo);
+    font-size: 1.5em;
+    color: var(--vinho-claro);
+    letter-spacing: 4px;
 }
 
 
 /*CONTATO*/
 
 .contato{
-    margin: 20% 10% 20% 10%;
+    background-color: var(--vinho);
+    margin:  0;
+    padding: 20px;
     display: flex;
+}
+
+/*Contato fornecido por mim*/
+.contato__fornecido{
+    width: 30%;
+    margin-left: 23%;
+    margin-top: 5%;
+}
+.contato__fornecido h2{
+    font-family: var(--fonte-titulo);
+    font-size: 2em;
+    font-weight: 300;
+    color: var(--preto);
+    letter-spacing: 2px;
+}
+.contato__fornecido__tel p{
+    margin-top: 3%;
+    margin-bottom: 0;
+    font-family: var(--fonte-paragrafo);
+}
+.contato__fornecido__tel h4{
+    font-family: var(--fonte-titulo);
+    font-weight: 300;
+    font-size: 1.2em;
+    color: var(--preto);
+    letter-spacing: 2px;
+}
+.contato__fornecido__email p{
+    margin-top: 3%;
+    margin-bottom: 0;
+    font-family: var(--fonte-paragrafo);
+}
+.contato__fornecido__email h4{
+    margin-bottom: 5%;
+    font-family: var(--fonte-titulo);
+    font-weight: 300;
+    font-size: 1.2em;
+    color: var(--preto);
+    letter-spacing: 2px;
+}
+
+.contato__fornecido .redes-sociais{
+    margin: 0 1%;
+    font-family: var(--fonte-paragrafo);
+}
+.contato__fornecido .redes-sociais p{
+    margin-bottom: 1%;
+}
+
+.contato__fornecido .redes-sociais a > img{
+    width: 7%;
+}
+
+/*Design do formulario*/
+.contato__formulario{
+    width: 50%;
+    margin-left: -10%;
+}
+.contato__formulario h2{
+    text-align: center;
+    font-family: var(--fonte-titulo);
+    font-size: 2em;
+    font-weight: 300;
+    color: var(--preto);
+    letter-spacing: 2px;
+}
+.contato__formulario p{
+    margin-top: 0%;
+    margin-bottom: 5%;
+    text-align: center;
+    font-family: var(--fonte-paragrafo);
+    font-size: 0.8em;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    columns: 2;
+    align-items: center;
+}
+form input{
+    width: 350px;
+    height: 20px;
+    margin: 2px 0 10px 0;
+    background-color: var(--vinho-escuro);
+    border: var(--vinho-claro);
+    border-radius: 2px;
+    font-family: var(--fonte-paragrafo);
+    color: white;
+    padding-left: 5px;
+}
+#contato__email, #contato__telefone{
+    width: 165px;
+    height: 20px;
+    
+}
+.grupo__linha {
+    display: flex;
+    gap: 15px;
+}
+
+.grupo__linha div {
+    display: flex;
+    flex-direction: column; 
+}
+.grupo__linha label{
+    margin-bottom: -1%;
+}
+
+form label{
+    
+    margin-bottom: -0.5%;
+    font-family: var(--fonte-titulo);
+    font-size: 1.2em;
+    color: var(--preto);
+}
+
+textarea{
+    width: 350px;
+    height: 80px;
+    margin-top: 2px;
+    background-color: var(--vinho-escuro);
+    border: var(--vinho-claro);
+    border-radius: 2px;
+    font-family: var(--fonte-paragrafo);
+    color: white;
+    padding-top: 5px;
+    padding-left: 5px;
+    white-space: pre-line;
+}
+
+#bnt-enviar{
+    margin-top: 10px;
+    width: 180px;
+    height: 40px;
+    font-family: var(--fonte-titulo);
+    font-weight: 200;
+    font-size: 1.3em;
+    border-radius: 2px;
+}
+#bnt-enviar:hover{
+    background-color: var(--vinho);
+    border: 2px solid var(--vinho-escuro);
+    border-radius: 10px;
+    color: var(--vinho-escuro);
+    transition: 0.4s;
+}
+
+footer > p{
+    margin: 5px 5px 5px 5px;
+    text-align: center;
+    font-family: var(--fonte-paragrafo);
+    font-size: 0.8em;
 }

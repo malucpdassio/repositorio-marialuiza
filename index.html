@@ -18,32 +18,35 @@
             <a href="src/html/contato.html">Contato</a>         
         </ul>
 
+        
+
     </header>
     <main>
 
         
 
         <section class="apresentacao">
-            <h2>Olá, Meu nome é</h2>
-            <h1>Maria Luiza Dássio</h1>
-            <h2>E eu sou <strong>Desenvolvedora</strong>!</h2>
-            
-            
-            <div class="apresentacao__link">
-
-                <a href="" class="apresentacao__curriculo">BAIXAR CV</a>
+            <div class="apresentacao__principal">
+                <h2>Olá, Meu nome é</h2>
+                <h1>Maria Luiza Dássio</h1>
+                <h2>E eu sou <strong>Desenvolvedora</strong>!</h2>
                 
-                <div class="redes-sociais">
-                    <p>Redes Sociais</p>
-                    <a href=""><img src="src/assets/icon/icon-github-color.png" alt="icone-github"></a>
-                    <a href=""><img src="src/assets/icon/icon-whatsapp.png" alt="icone-whatsapp"></a>
-                    <a href=""><img src="src/assets/icon/icon-instagram.png" alt="icone-instagram"></a>
-                    <a href=""><img src="src/assets/icon/icon-linkedin.png" alt="icone-linkedin"></a>
+                
+                <div class="apresentacao__link">
+                    <a href="" class="apresentacao__curriculo">BAIXAR CV</a>
+                
+                    <div class="redes-sociais">
+                        <p>Redes Sociais</p>
+                        <a href=""><img src="src/assets/icon/icon-github-color.png" alt="icone-github"></a>
+                        <a href=""><img src="src/assets/icon/icon-whatsapp.png" alt="icone-whatsapp"></a>
+                        <a href=""><img src="src/assets/icon/icon-instagram.png" alt="icone-instagram"></a>
+                        <a href=""><img src="src/assets/icon/icon-linkedin.png" alt="icone-linkedin"></a>
+                    </div>
+                
                 </div>
-                
             </div>
 
-            <img src="imagem/maria-luiza-dassio.jpg" alt="maria-luiza">
+            <img src="src/assets/image/maria-luiza-dassio.png" alt="dassio" class="malu__dassio">
             
 
         </section>
@@ -96,6 +99,10 @@
                     <a href="">Demo</a>
                 </div>
             </div>
+
+            <div class="bnt__mais">
+                <a href="">Mais Projetos</a>
+            </div>
             
         </article>
 
@@ -128,8 +135,10 @@
                 <p>Envie seus dados para eu poder entrar em contato com você!</p>
                 <form id="formulario__contato">
                     
-                    <label for="nome">Nome</label>
-                    <input type="text" name="nome" id="contato__nome" required>
+                    <div class="grupo__maior">
+                        <label for="nome">Nome</label>
+                        <input type="text" name="nome" id="contato__nome" required>
+                    </div>
 
                     <div class="grupo__linha">
                         <div>
@@ -143,11 +152,15 @@
                         </div>
                       </div>
 
-                    <label for="titulo">Título</label>
-                    <input type="text" name="titulo" id="contato__titulo">
+                    <div class="grupo__maior">
+                        <label for="titulo">Título</label>
+                        <input type="text" name="titulo" id="contato__titulo">
+                    </div>
 
-                    <label for="mensagem">Mensagem</label>
-                    <textarea name="mensagem" id="contato__mensagem" required></textarea>
+                    <div class="grupo__maior">
+                        <label for="mensagem">Mensagem</label>
+                        <textarea name="mensagem" id="contato__mensagem" required></textarea>
+                    </div>
 
                     <input type="submit" value="Enviar" id="bnt-enviar">
                 </form>

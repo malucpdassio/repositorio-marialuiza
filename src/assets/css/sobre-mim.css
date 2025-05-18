@@ -72,189 +72,137 @@ main{
 }
 section{
     margin: 10% 10% 20% 10%;    
-    display: flex;
+  display: flex;
   
 }
-.apresentacao__principal{
+.titulo__principal{
     display: flex;
     flex-direction: column;
     columns: 2;
+    margin: 10% 0 0 5%;
 }
-.apresentacao__principal > h2{
+.titulo__principal > h2{
     font-size: 3em;
     font-family: var(--fonte-titulo);
     font-weight: 200;
 }
-.apresentacao__principal > h1{
+.titulo__principal > h1{
     font-size: 3.5em;
     color: var(--vinho);
     font-family: var(--fonte-titulo);
     font-weight: 200;
 }
-
-
 .malu__dassio{
     width: 35%;
-    margin-left: 15%;
+    margin-left: 10%;
     border-radius: 5px;
     border: 2px dashed var(--vinho);
 }
 
-.apresentacao__link{
-    display: flex;
-    gap: 5%;
-    margin: 2% 0 2% 0;
-    
+
+
+
+/*Sobre mim*/
+
+#sobre{
+    margin: auto;
+    margin-bottom: 10%;
+    width: 1100px;
 }
-
-.apresentacao__curriculo{
-    margin: 1%;
-    padding: 15px;
-    border: 2px solid var(--vinho);
-    border-radius: 5px;
-    text-decoration: none;
-    font-family: var(--fonte-paragrafo);
-    font-weight: bold;
-    font-size: 1.25em;
-    color: var(--vinho);
-}
-.apresentacao__curriculo:hover{
-    background-color: var(--vinho);
-    color: var(--preto);
-    transition: 0.35s;
-}
-
-.apresentacao__curriculo:active{
-    background-color: var(--vinho-claro);
-    color: white;
-    transition: 0.2s;
-}
-
-.redes-sociais{
-    margin: 0 -3%;
-    font-family: var(--fonte-paragrafo);
-}
-
-.redes-sociais a > img{
-    width: 10%;
-    padding: 5px;
-}
-
-/*SKILL*/
-
-.skill{
-    background-color: var(--vinho-escuro);
-    position: relative;
-    width: auto;
-    height: 300px;
-    margin: 0;
-    padding: 45px 20px;
-    border-bottom: 1px solid var(--vinho);
-    border-top: 1px solid var(--vinho);
-    text-align: center;
-}
-
-/*Bug Skill: parar de fazer a div se mexer*/
-
-.skill h2{
-    background-color: var(--vinho);
-    border-radius: 5px;
-    box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.226);;
-    position: absolute;
-    margin: 0;
-    top: -10%;
-    left: 40%;
-    padding: 15px 50px;
-    text-align: center;
-    font-size: 2.5em;
-    font-family: var(--fonte-titulo);
-    letter-spacing: 10px;
-    color: var(--vinho-escuro);
-
-}
-.skill img{
-    width: 9%;
-    margin: 3% 1%;
-}
-.skill img:hover{
-    width: 10%;
-    transition: 0.2s;
-}
-/*Atualização para Skill: Colocar um mini texto invisivel para aparecer quando o mouse estiver encima*/
-
-
-/*PROJETOS*/
-
-.projetos{
-    margin: 50px 20px;
-
-}
-
-.projetos h2{
-    margin-bottom: 5%;
-    font-family: var(--fonte-titulo);
-    font-size: 2.5em;
-    color: var(--vinho);
-    letter-spacing: 10px;
-}
-.projetos__apresentacao{
-    display: flex;
-    gap: 2%;
-}
-.projetos__apresentacao div{
-    background-color: var(--vinho-escuro);
-    border: 2px dashed var(--vinho);
-    padding: 20px;
+#sobre > p{
     text-align: justify;
     font-family: var(--fonte-paragrafo);
+    font-size: 1.2em;
 }
-.projetos__apresentacao a, p{
-    margin: 1% 0 5% 0;
+
+
+#experiencias{
+    margin: auto auto 10%;
+    width: 1100px;
+    display: flex;
+    flex-direction: column;
+}
+#experiencias > h2{
+    font-family: var(--fonte-titulo);
+    font-size: 2em;
+    font-weight: normal;
+}
+#experiencias > h1{
+    font-family: var(--fonte-titulo);
+    font-size: 2.5em;
+    font-weight: normal;
+    color: var(--vinho);
+}
+
+.cargo2{
+    display: flex;
+    justify-content: right;
+    gap: 10px;
+}
+
+
+.experiencias__cargo__2{
+    background-color: var(--vinho-escuro);
+    width: 350px;
+    padding: 15px;
+    border: 2px dashed var(--Vinho-escuro);
+   justify-content: right;
+    gap: 10px; 
+}
+
+.experiencias__cargo__2 > h2{
+    font-family: var(--fonte-titulo);
+    font-size: 1.5em;
+    font-weight: normal;
+    color: var(--vinho-claro);
+    letter-spacing: 3px;
+}
+.experiencias__cargo__2 > h3{
+    font-family: var(--fonte-paragrafo);
+    font-size: 1em;
+    font-weight: bold;
+    letter-spacing: 5px;
     
 }
-.projetos__apresentacao a{
-    margin-left: 5%;
-    float: right;
-    text-decoration: none;
+.experiencias__cargo__2 > p{
+    font-family: var(--fonte-paragrafo);
     font-size: 1em;
-    color: var(--vinho-claro);
+    
 }
-.projetos__apresentacao a:hover{
-    text-decoration: underline;
-    color: var(--Vinho-escuro);
+
+
+.cargos{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
 }
-.projetos__apresentacao h3{
-    margin-top: 5%;
+.experiencias__cargo{
+    background-color: var(--vinho-escuro);
+    width: 350px;
+    padding: 15px;
+    border: 2px dashed var(--Vinho-escuro);
+}
+
+.experiencias__cargo > h2{
     font-family: var(--fonte-titulo);
     font-size: 1.5em;
+    font-weight: normal;
     color: var(--vinho-claro);
-    letter-spacing: 4px;
+    letter-spacing: 3px;
 }
-
-.bnt__mais{
-    margin-top: 45px;
-    margin-bottom: 45px;
-    text-align: center;
+.experiencias__cargo > h3{
+    font-family: var(--fonte-paragrafo);
+    font-size: 1em;
+    font-weight: bold;
+    letter-spacing: 5px;
+    
 }
-
-.bnt__mais > a{
-    text-decoration: none;
-    font-size: 1.5em;
-    font-family: var(--fonte-titulo);
-    color: var(--vinho);
-    letter-spacing: 7px;
+.experiencias__cargo > p{
+    font-family: var(--fonte-paragrafo);
+    font-size: 1em;
+    
 }
-.bnt__mais > a:hover{
-    text-decoration: underline;
-    font-size: 1.8em;
-    color: var(--vinho-claro);
-    transition: 0.35s;
-}
-.bnt__mais > a:active{
-    color: var(--vinho);
-    transition: 0.35s;
-}
-
 /*CONTATO*/
 
 .contato{

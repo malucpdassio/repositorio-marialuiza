@@ -5,22 +5,98 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/src/assets/css/contato.css">
         <title>Repositorio|Sobre Mim </title>
     </head>
 <body>
     <header>
-        <h1>Maria Luiza Dássio</h1>
-    
-        <ul>
+        <h1>Maria Luiza <strong>Dássio</strong></h1>
+
+        <ul id="menu">
             <a href="/index.html">Home</a>
-            <a href="src/html/sobre-mim.html">Sobre Mim</a>
-            <a href="src/html/habilidade.html">Experiencias</a>
-            <a href="src/html/projetos.html">Projetos</a>
-            <a href="src/html/contato.html">Contato</a>        
+            <a href="sobre-mim.html">Sobre Mim</a>
+            <a href="experiencias.html">Experiencias</a>
+            <a href="projetos.html">Projetos</a>
+            <a href="contato.html">Contato</a>         
         </ul>
+
+        
 
     </header>
 
+
+    </article>
+
+         <article class="contato">
+            <div class="contato__fornecido">
+                <h2>ENTRE EM CONTATO</h2>
+
+                <div class="contato__fornecido__tel">
+                    <P>Telefone:</P>
+                    <h4>71 9 8704-1221</h4>
+                </div>
+
+                <div class="contato__fornecido__email">
+                    <p>E-mail:</p>
+                    <h4>malucardosopd@gmail.com</h4>
+                </div>
+
+                <div class="redes-sociais">
+                    <p>Redes Sociais</p>
+                    <a href=""><img src="../assets/icon/icon-github-color.png" alt="icone-github"></a>
+                    <a href=""><img src="../assets/icon/icon-whatsapp.png" alt="icone-whatsapp"></a>
+                    <a href=""><img src="../assets/icon/icon-instagram.png" alt="icone-instagram"></a>
+                    <a href=""><img src="../assets/icon/icon-linkedin.png" alt="icone-linkedin"></a>
+                </div>
+
+            </div>
+
+            <div class="contato__formulario">
+                <h2>FORMULARIO DE CONTATO</h2>
+                <p>Envie seus dados para eu poder entrar em contato com você!</p>
+                <form id="formulario__contato">
+                    
+                    <div class="grupo__maior">
+                        <label for="nome">Nome</label>
+                        <input type="text" name="nome" id="contato__nome" required>
+                    </div>
+
+                    <div class="grupo__linha">
+                        <div>
+                          <label for="email">E-mail</label>
+                          <input type="email" name="email" id="contato__email" required>
+                        </div>
+                      
+                        <div>
+                          <label for="telefone">Telefone</label>
+                          <input type="tel" name="telefone" id="contato__telefone" required>
+                        </div>
+                      </div>
+
+                    <div class="grupo__maior">
+                        <label for="titulo">Título</label>
+                        <input type="text" name="titulo" id="contato__titulo">
+                    </div>
+
+                    <div class="grupo__maior">
+                        <label for="mensagem">Mensagem</label>
+                        <textarea name="mensagem" id="contato__mensagem" required></textarea>
+                    </div>
+
+                    <input type="submit" value="Enviar" id="bnt-enviar">
+                </form>
+            </div>
+        </article>
+        
+    </main>
+    <footer>
+        <p>Desenvolvido por Maria Luiza Dassio</p>
+    </footer>
+
+    <!--Biblioteca do EmailJS-->    
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <script src="src/javascript/script-formulario.js"></script>
 
     
 </body>

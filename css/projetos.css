@@ -81,14 +81,25 @@ strong{
 }
 .projetos__apresentacao{
     display: flex;
-    gap: 1%;
+    gap: 2%;
 }
+
+.projetos__apresentacao__blocos{
+    width: 260vh;
+    height: 70vh;
+}
+
+
 .projetos__apresentacao div{
     background-color: var(--vinho-escuro);
     border: 2px dashed var(--vinho);
     padding: 20px;
     text-align: justify;
     font-family: var(--fonte-paragrafo);
+}
+
+.projetos__apresentacao img{
+    width: 100%;
 }
 .projetos__apresentacao a, p{
     margin: 1% 0 5% 0;

@@ -251,6 +251,10 @@ section{
     gap: 5vh; 
 }
 
+.experiencias__cargo__2 > h2,h3,h4,li{
+    margin-top: 2%;
+}
+
 .experiencias__cargo__2 > h2{
     font-family: var(--fonte-titulo);
     font-size: 1.5em;
@@ -265,10 +269,18 @@ section{
     letter-spacing: 5px;
     
 }
-.experiencias__cargo__2 > p{
+.experiencias__cargo__2 > h4{
+    font-family: var(--fonte-paragrafo);
+    font-size: 0.8em;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 7%;
+    
+}
+.experiencias__cargo__2 > li{
     font-family: var(--fonte-paragrafo);
     font-size: 1em;
-    
+  
 }
 
 
@@ -285,6 +297,10 @@ section{
     border: 2px dashed var(--Vinho-escuro);
 }
 
+.experiencias__cargo > h2,h3,h4,li{
+    margin-top: 2%;
+}
+
 .experiencias__cargo > h2{
     font-family: var(--fonte-titulo);
     font-size: 1.5em;
@@ -299,7 +315,15 @@ section{
     letter-spacing: 5px;
     
 }
-.experiencias__cargo > p{
+.experiencias__cargo > h4{
+    font-family: var(--fonte-paragrafo);
+    font-size: 0.8em;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 7%;
+    
+}
+.experiencias__cargo > li{
     font-family: var(--fonte-paragrafo);
     font-size: 1em;
     
@@ -307,15 +331,35 @@ section{
 
 /*PROGRESSOS*/
 #progresso{
-    margin: 0 auto;
+    margin: 0;
     margin-bottom: 10vh;
-    width: 180vh;
+    padding: 20px;
+    border: 2px solid var(--vinho);
+    background-color: var(--vinho-escuro);
     display: flex;
     flex-direction: column;
 }
 
+#progresso > h2{
+    margin-right: 20vh;
+    font-family: var(--fonte-titulo);
+    font-size: 2em;
+    font-weight: normal;
+    text-align: right;
+}
+#progresso > h1{
+    margin-bottom: 5%;
+    margin-right: 20vh;
+    font-family: var(--fonte-titulo);
+    font-size: 2.5em;
+    font-weight: normal;
+    text-align: right;
+    color: var(--vinho);
+}
+
+
 .progresso img{
-    width: 8%;
+    width: 7%;
     margin-top: 3vh;
     
 }
@@ -325,9 +369,66 @@ section{
     justify-content: center;
     gap: 3%;
 }
+
+.progresso p{
+    font-family: var(--fonte-paragrafo);
+    font-size: 1em;
+    letter-spacing: 3px;
+    margin-bottom: 2%;
+}
+
 .progresso .barra{
-    background-color: #A4062E;
+    background-color: var(--Vinho-escuro);
     width: 100vh;
+    height: 2vh;
+    gap: 5px;
+    border-radius: 5px;
+}
+.progresso .barrajs{
+    background-color: var(--vinho);
+    width: 15vh;
+    height: 2vh;
+    gap: 5px;
+    border-radius: 5px;
+}
+.progresso .barrahtml{
+    background-color: var(--vinho);
+    width: 33.3vh;
+    height: 2vh;
+    gap: 5px;
+    border-radius: 5px;
+}
+.progresso .barracss{
+    background-color: var(--vinho);
+    width: 23vh;
+    height: 2vh;
+    gap: 5px;
+    border-radius: 5px;
+}
+.progresso .barragithub{
+    background-color: var(--vinho);
+    width: 10vh;
+    height: 2vh;
+    gap: 5px;
+    border-radius: 5px;
+}
+.progresso .barragit{
+    background-color: var(--vinho);
+    width: 6vh;
+    height: 2vh;
+    gap: 5px;
+    border-radius: 5px;
+}
+.progresso .barrafigma{
+    background-color: var(--vinho);
+    width: 20vh;
+    height: 2vh;
+    gap: 5px;
+    border-radius: 5px;
+}
+.progresso .barrajava{
+    background-color: var(--vinho);
+    width: 12vh;
     height: 2vh;
     gap: 5px;
     border-radius: 5px;

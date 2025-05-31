@@ -267,7 +267,7 @@ section{
     position: absolute;
     margin: 0;
     top: -10%;
-    left: 40%;
+    left: 31%;
     padding: 15px 50px;
     text-align: center;
     font-size: 2.5em;
@@ -294,6 +294,13 @@ section{
 
 }
 
+/*Ver bug de colocar um bloco só*/
+
+.projetos__apresentacao__blocos{
+    width: 260vh;
+    height: 70vh;
+}
+
 .projetos h2{
     margin-bottom: 5%;
     font-family: var(--fonte-titulo);
@@ -312,6 +319,10 @@ section{
     text-align: justify;
     font-family: var(--fonte-paragrafo);
 }
+.projetos__apresentacao img{
+    width: 100%;
+}
+
 .projetos__apresentacao a, p{
     margin: 1% 0 5% 0;
     

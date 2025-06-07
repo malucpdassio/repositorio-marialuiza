@@ -208,7 +208,9 @@ section{
 #sobre{
     margin: auto;
     margin-bottom: 10%;
-    width: 180vh;
+    width: auto;
+    padding-left: 8%;
+    padding-right:8%;
 }
 #sobre > p{
     text-align: justify;
@@ -335,6 +337,8 @@ section{
     margin-bottom: 10vh;
     padding: 20px;
     border: 2px solid var(--vinho);
+    border-left: 0;
+    border-right:0 ;
     background-color: var(--vinho-escuro);
     display: flex;
     flex-direction: column;
@@ -652,7 +656,220 @@ footer > p{
     font-size: 1em;
 }
 
+/*EXPERIENCIA*/
+#experiencias{
+    margin: auto 10% 10%;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    
+}
+#experiencias > h2{
+    font-size: 1.5em;
+    text-align: center;
+}
+#experiencias > h1{
+    font-size: 2em;
+    text-align: center;
+}
 
+.cargo2{
+   
+    gap: 5vh;
+    margin-top: 2%;
+    margin-bottom:5%;
+}
+
+
+.experiencias__cargo__2{
+    background-color: var(--vinho-escuro);
+    width: 200px;
+    
+    padding: 15px;
+    border: 2px dashed var(--Vinho-escuro);
+   justify-content: right;
+    gap: 10vh; 
+}
+
+.experiencias__cargo__2 > h2,h3,h4,li{
+    margin-top: 2%;
+}
+
+.experiencias__cargo__2 > h2{
+    font-family: var(--fonte-titulo);
+    font-size: 1.5em;
+    font-weight: normal;
+    color: var(--vinho-claro);
+    letter-spacing: 3px;
+}
+.experiencias__cargo__2 > h3{
+    font-family: var(--fonte-paragrafo);
+    font-size: 1em;
+    font-weight: bold;
+    letter-spacing: 5px;
+    
+}
+.experiencias__cargo__2 > h4{
+    font-family: var(--fonte-paragrafo);
+    font-size: 0.8em;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 7%;
+    
+}
+.experiencias__cargo__2 > li{
+    font-family: var(--fonte-paragrafo);
+    font-size: 1em;
+  
+}
+
+
+.cargos{
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+
+}
+.experiencias__cargo{
+    background-color: var(--vinho-escuro);
+    width: 200px;
+    padding: 15px;
+    border: 2px dashed var(--Vinho-escuro);
+}
+
+.experiencias__cargo > h2,h3,h4,li{
+    margin-top: 2%;
+}
+
+.experiencias__cargo > h2{
+    font-family: var(--fonte-titulo);
+    font-size: 1.5em;
+    font-weight: normal;
+    color: var(--vinho-claro);
+    letter-spacing: 3px;
+}
+.experiencias__cargo > h3{
+    font-family: var(--fonte-paragrafo);
+    font-size: 1em;
+    font-weight: bold;
+    letter-spacing: 5px;
+    
+}
+.experiencias__cargo > h4{
+    font-family: var(--fonte-paragrafo);
+    font-size: 0.8em;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 7%;
+    
+}
+.experiencias__cargo > li{
+    font-family: var(--fonte-paragrafo);
+    font-size: 1em;
+    
+}
+
+/*PROGRESSOS*/
+#progresso{
+    margin: 0 0 10%;
+    width: auto;
+    padding: 20px;
+    border-left: 0;
+    border-right:0 ;
+    background-color: var(--vinho-escuro);
+    display: flex;
+    flex-direction: column;
+}
+
+#progresso > h2{
+    font-family: var(--fonte-titulo);
+    font-size: 1.5em;
+    text-align: center;
+}
+#progresso > h1{
+    font-family: var(--fonte-titulo);
+    font-size: 2em;
+    font-weight: normal;
+    text-align: center;
+    color: var(--vinho);
+}
+
+
+.progresso img{
+    width: 7%;
+    margin-top: 3vh;
+    
+}
+.progresso{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3%;
+}
+
+.progresso p{
+    font-family: var(--fonte-paragrafo);
+    font-size: 1em;
+    letter-spacing: 3px;
+    margin-bottom: 2%;
+}
+
+.progresso .barra{
+    background-color: var(--Vinho-escuro);
+    max-width: 50vh;
+    height: 2vh;
+    gap: 5px;
+    border-radius: 5px;
+}
+.progresso .barrajs{
+    background-color: var(--vinho);
+    width: 15vh;
+    height: 2vh;
+    gap: 5px;
+    border-radius: 5px;
+}
+.progresso .barrahtml{
+    background-color: var(--vinho);
+    width: 33.3vh;
+    height: 2vh;
+    gap: 5px;
+    border-radius: 5px;
+}
+.progresso .barracss{
+    background-color: var(--vinho);
+    width: 23vh;
+    height: 2vh;
+    gap: 5px;
+    border-radius: 5px;
+}
+.progresso .barragithub{
+    background-color: var(--vinho);
+    width: 10vh;
+    height: 2vh;
+    gap: 5px;
+    border-radius: 5px;
+}
+.progresso .barragit{
+    background-color: var(--vinho);
+    width: 6vh;
+    height: 2vh;
+    gap: 5px;
+    border-radius: 5px;
+}
+.progresso .barrafigma{
+    background-color: var(--vinho);
+    width: 20vh;
+    height: 2vh;
+    gap: 5px;
+    border-radius: 5px;
+}
+.progresso .barrajava{
+    background-color: var(--vinho);
+    width: 12vh;
+    height: 2vh;
+    gap: 5px;
+    border-radius: 5px;
+}
 
 
 /*CONTATO*/

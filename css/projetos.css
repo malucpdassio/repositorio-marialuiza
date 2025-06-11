@@ -82,10 +82,11 @@ strong{
 .projetos__apresentacao{
     display: flex;
     gap: 2%;
+    justify-content: center;
 }
 
 .projetos__apresentacao__blocos{
-    width: 260vh;
+    width: 70vh;
     height: 70vh;
 }
 
@@ -422,4 +423,230 @@ footer > p{
   animation-delay: -28s;
   transform-origin: 25vw -3vh;
   box-shadow: 40vmin 0 5.196265905749415vmin currentColor;
+}
+
+@media(max-width: 820px){
+
+/*PROJETOS*/
+
+
+
+.projetos__apresentacao{
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;    
+}
+
+.projetos__apresentacao__blocos{
+    width: 60vh;
+    height: 70vh;
+    margin: auto;
+}
+/*Colocar Margin Auto na div dos projetos*/
+
+.projetos h2{
+    margin-bottom: 5%;
+    font-family: var(--fonte-titulo);
+    font-size: 2em;
+    color: var(--vinho);
+    letter-spacing: 10px;
+    text-align: center;
+}
+
+
+.projetos__apresentacao a, p{
+    margin: 1% 0 5% 0;
+    
+}
+.projetos__apresentacao a{
+    margin-left: 5%;
+    float: right;
+    text-decoration: none;
+    font-size: 1em;
+    color: var(--vinho-claro);
+}
+.projetos__apresentacao a:hover{
+    text-decoration: underline;
+    color: var(--Vinho-escuro);
+}
+.projetos__apresentacao h3{
+    margin-top: 5%;
+    font-family: var(--fonte-titulo);
+    font-size: 1.5em;
+    color: var(--vinho-claro);
+    letter-spacing: 4px;
+}
+
+.bnt__mais{
+    margin-top: 45px;
+    margin-bottom: 45px;
+    text-align: center;
+}
+
+.bnt__mais > a{
+    text-decoration: none;
+    font-size: 1.5em;
+    font-family: var(--fonte-titulo);
+    color: var(--vinho);
+    letter-spacing: 7px;
+}
+.bnt__mais > a:hover{
+    text-decoration: underline;
+    font-size: 1.8em;
+    color: var(--vinho-claro);
+    transition: 0.35s;
+}
+.bnt__mais > a:active{
+    color: var(--vinho);
+    transition: 0.35s;
+}
+
+
+/*CONTATO*/
+
+.contato{
+    background-color: var(--vinho);
+    margin:  0;
+    width: auto;
+    height: 115vh;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+/*Contato fornecido por mim*/
+.contato__fornecido{
+    width: 100%;
+    margin: 0 auto ;
+    text-align: center;
+}
+.contato__fornecido__tel p{
+    margin-top: 1%;
+}
+.contato__fornecido__tel h4{
+    font-size: 1.4em;
+}
+.contato__fornecido__email p{
+    margin-top: 1%;
+}
+.contato__fornecido__email h4{
+    margin-bottom: 3%;
+    font-size: 1.4em;
+}
+
+.apresentacao__link{
+    display: flex;
+    justify-content: center;
+}
+.contato__fornecido .redes-sociais p{
+    margin-bottom: 1%;
+}
+
+.contato__fornecido .redes-sociais a > img{
+    width: 7%;
+}
+
+/*Design do formulario*/
+.contato__formulario{
+    width: 100%;
+    margin: 7% auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contato__formulario p{
+    margin-bottom: 5%;
+    text-align: center;
+    font-family: var(--fonte-paragrafo);
+    font-size: 0.8em;
+}
+form input{
+    width: 350px;
+    height: 20px;
+    margin: 2px 0 10px 0;
+    background-color: var(--vinho-escuro);
+    border: var(--vinho-claro);
+    border-radius: 2px;
+    font-family: var(--fonte-paragrafo);
+    color: white;
+    padding-left: 5px;
+}
+#contato__email, #contato__telefone{
+    width: 165px;
+    height: 20px;
+    
+}
+.grupo__maior{
+    display: flex;
+    flex-direction: column;
+}
+.grupo__linha {
+    display: flex;
+    gap: 15px;
+}
+
+.grupo__linha div {
+    display: flex;
+    flex-direction: column; 
+}
+.grupo__linha label{
+    margin-bottom: -1%;
+}
+
+
+form label{
+    justify-content: left;
+    margin-bottom: -0.5%;
+    font-family: var(--fonte-titulo);
+    font-size: 1.2em;
+    color: var(--preto);
+}
+
+textarea{
+    width: 350px;
+    height: 80px;
+    margin-top: 2px;
+    background-color: var(--vinho-escuro);
+    border: var(--vinho-claro);
+    border-radius: 2px;
+    font-family: var(--fonte-paragrafo);
+    color: white;
+    padding-top: 5px;
+    padding-left: 5px;
+    white-space: pre-line;
+}
+
+#bnt-enviar{
+    margin-top: 10px;
+    padding-left: 0;
+    width: 180px;
+    height: 40px;
+    font-family: var(--fonte-titulo);
+    font-weight: 200;
+    font-size: 1.3em;
+    border-radius: 2px;
+}
+#bnt-enviar:hover{
+    background-color: var(--vinho);
+    border: 2px solid var(--vinho-escuro);
+    border-radius: 10px;
+    color: var(--vinho-escuro);
+    transition: 0.4s;
+}
+#bnt-enviar:active{
+    background-color: var(--vinho-claro);
+    border: 4px solid var(--vinho-escuro);
+    border-radius: 10px;
+    color: white;
+    transition: 0.2s;
+}
+
+footer > p{
+    margin: 5px 5px 5px 5px;
+    text-align: center;
+    font-family: var(--fonte-paragrafo);
+    font-size: 0.8em;
+}
+
 }

@@ -194,9 +194,9 @@ section{
     font-weight: 200;
 }
 
-
+/*Redimensionar Imagem*/
 .malu__dassio{
-    width: 35%;
+    max-width: 35%;
     margin-left: 15%;
     border-radius: 5px;
     border: 2px dashed var(--vinho);
@@ -291,17 +291,14 @@ section{
 
 .projetos{
     margin: 50px 20px;
-
+    
 }
 
 /*Ver bug de colocar um bloco só*/
 
-.projetos__apresentacao__blocos{
-    width: 260vh;
-    height: 70vh;
-}
 
 .projetos h2{
+    margin-left: 10vh;
     margin-bottom: 5%;
     font-family: var(--fonte-titulo);
     font-size: 2.5em;
@@ -311,6 +308,7 @@ section{
 .projetos__apresentacao{
     display: flex;
     gap: 2%;
+    justify-content: center;
 }
 .projetos__apresentacao div{
     background-color: var(--vinho-escuro);
@@ -319,6 +317,12 @@ section{
     text-align: justify;
     font-family: var(--fonte-paragrafo);
 }
+.projetos__apresentacao__blocos{
+    width: 70vh;
+    height: 70vh;
+    text-align: center;
+}
+
 .projetos__apresentacao img{
     width: 100%;
 }
@@ -668,7 +672,7 @@ strong{
 }
 
 .projetos__apresentacao__blocos{
-    width: 60vh;
+    width: 70vh;
     height: 70vh;
     margin: auto;
 }
